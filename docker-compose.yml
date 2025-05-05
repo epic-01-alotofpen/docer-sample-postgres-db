@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: sample-postgres-db
+    image: postgres:latest
+    # buildを使用する場合, image: postgres:latestをコメントアウトしてください
+    # build: ./image/postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
