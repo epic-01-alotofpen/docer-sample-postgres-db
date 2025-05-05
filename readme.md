@@ -32,7 +32,8 @@ af7cfc39d308   postgres:latest   "docker-entrypoint.s…"   37 seconds ago   Up 
 
 ## 削除
 dockerのステータス確認で表示されたコンテナの情報でCONTAINER IDを確認し使用する
-例
+
+■例
 ```
 docker rm af7cfc39d308
 ```
