@@ -16,6 +16,7 @@ docker ps
 ```
 
 上記コマンド実行後、下記のように表示され、NAMES = sample-postgres-dbのコンテナが作成される。(CONTAINER IDは作成都度に異なる)
+
 ■例
 ```
 CONTAINER ID   IMAGE             COMMAND                   CREATED          STATUS          PORTS                    NAMES
