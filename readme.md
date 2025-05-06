@@ -15,7 +15,8 @@ docker compose up -d
 docker ps
 ```
 
-上記コマンド実行後、下記のように表示され、sample-postgres-dbのコンテナが作成される。
+上記コマンド実行後、下記のように表示され、NAMES = sample-postgres-dbのコンテナが作成される。(CONTAINER IDは作成都度に異なる)
+■例
 ```
 CONTAINER ID   IMAGE             COMMAND                   CREATED          STATUS          PORTS                    NAMES
 af7cfc39d308   postgres:latest   "docker-entrypoint.s…"   37 seconds ago   Up 35 seconds   0.0.0.0:5432->5432/tcp   sample-postgres-db
